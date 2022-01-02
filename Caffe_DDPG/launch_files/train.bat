@@ -1,0 +1,14 @@
+"../bin/Release/Caffe_DDPG.exe" ^
+--train=1 ^
+--display=0 ^
+--FPS=2000 ^
+--solver_actor=solver_actor.prototxt ^
+--solver_critic=solver_critic.prototxt ^
+--memory_size=100000 ^
+--noise_iter_decay=75000 ^
+--batch_size=24 ^
+--log_file=log.csv ^
+--target_net_update_rate=0.001 ^
+--gamma=0.95 ^
+--max_len_episode=2000 ^
+--num_episodes=500
